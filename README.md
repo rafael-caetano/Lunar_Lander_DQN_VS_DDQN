@@ -230,28 +230,20 @@ To provide a clear visual understanding of how the agents perform, I present thr
 #### Untrained Network (Random Actions):
 This video demonstrates the performance of an untrained agent, which essentially takes random actions. As expected, the spacecraft crashes without any controlled landing attempt.
 
-<video width="320" height="240" controls>
-  <source src="outputs/random_actions.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://img.youtube.com/vi/Fqh_EZiyjNY/0.jpg)](https://www.youtube.com/watch?v=Fqh_EZiyjNY)
 
 #### Trained Deep Q-Network (DQN) Model:
 This video shows a successful landing achieved by a fully trained DQN agent. Notice the controlled descent and landing maneuvers.
 
-<video width="320" height="240" controls>
-  <source src="outputs/trained_dqn.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://img.youtube.com/vi/TBnmtUFbyRk/0.jpg)](https://www.youtube.com/watch?v=TBnmtUFbyRk)
 
 #### Trained Double Deep Q-Network (DDQN) Model:
-Similarly, this video demonstrates a successful landing by a fully trained DDQN agent. 
+Similarly, this video demonstrates a successful landing by a fully trained DDQN agent.
 
-<video width="320" height="240" controls>
-  <source src="outputs/trained_ddqn.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://img.youtube.com/vi/pEOcBPwxoqk/0.jpg)](https://www.youtube.com/watch?v=pEOcBPwxoqk)
 
 These visual examples provide context for the quantitative analyses that follow, illustrating the dramatic improvement in performance from untrained to trained agents.
+
 
 ### Analysis of DQN and Double DQN Performance
 
