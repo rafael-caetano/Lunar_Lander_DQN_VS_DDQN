@@ -98,7 +98,8 @@ $Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha [ r_{t+1} + \gamma \max_{a'} Q(s_{t
 
 In DQN, the loss function to minimize:
 
-$L(\theta) = \mathbb{E}_{(s_t, a_t, r_{t+1}, s_{t+1}) \sim \text{Replay Buffer}} \left[ \left( r_{t+1} + \gamma \max_{a'} Q_{\theta^-}(s_{t+1}, a') - Q_\theta(s_t, a_t) \right)^2 \right]$
+$L(\theta) = \sum_{(s_t, a_t, r_{t+1}, s_{t+1}) \sim \text{Replay Buffer}} \left[ \left( r_{t+1} + \gamma \max_{a'} Q_{\theta^-}(s_{t+1}, a') - Q_\theta(s_t, a_t) \right)^2 \right]$
+
 
 Where:
 - $s_t$: Current state at time t
@@ -123,7 +124,8 @@ $Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left[ r_{t+1} + \gamma Q(s_{t+1}, 
 
 In DDQN, the loss function to minimize:
 
-$L(\theta) = \mathbb{E}_{(s_t, a_t, r_{t+1}, s_{t+1}) \sim \text{Replay Buffer}} \left[ \left( r_{t+1} + \gamma Q_{\theta^-}(s_{t+1}, \arg\max_{a'} Q_\theta(s_{t+1}, a')) - Q_\theta(s_t, a_t) \right)^2 \right]$
+$L(\theta) = \sum_{(s_t, a_t, r_{t+1}, s_{t+1}) \sim \text{Replay Buffer}} \left[ \left( r_{t+1} + \gamma Q_{\theta^-}(s_{t+1}, \arg\max_{a'} Q_\theta(s_{t+1}, a')) - Q_\theta(s_t, a_t) \right)^2 \right]$
+
 
 Where:
 - All variables are the same as in DQN
